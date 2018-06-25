@@ -14,16 +14,16 @@ namespace SeleniumChallenge
         {
             WebDriver = new ChromeDriver(Directory.GetCurrentDirectory());
 
-            WebDriver.Navigate().GoToUrl("http://www.esendex.com/echo");
+            WebDriver.Navigate().GoToUrl("[URL]");
             var username = WebDriver.FindElement(By.Id("username"));
             var btnNext = WebDriver.FindElement(By.Id("next"));
-            username.SendKeys("pritpaul.sehmbi+20180608@esendex.com");
+            username.SendKeys("[USERNAME]");
             btnNext.Click();
 
             var password = WebDriver.FindElement(By.Id("password"));
             var btnLogin = WebDriver.FindElement(By.Id("login"));
 
-            password.SendKeys("esendex.com");
+            password.SendKeys("[PASSWORD]");
             btnLogin.Click();
 
         }
